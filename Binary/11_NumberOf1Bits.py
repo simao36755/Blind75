@@ -1,3 +1,4 @@
+# Topics: Divide and conquer
 class Solution:
     def hammingWeight(self, n: int) -> int:
         count = 0
