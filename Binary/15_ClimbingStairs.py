@@ -3,12 +3,11 @@ class Solution:
     def climbStairs(self, n: int) -> int:
         a = 1
         b = 1
-        ways = 0
         for i in range(n-1):
-            ways = a+b
-            a = b
-            b = ways
-        return ways
+            tmp = a+b
+            b = a
+            a = tmp
+        return a
 
 
 
